@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undergraduate</title>
+    <link rel="stylesheet" href="/css/undergrad.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173450384-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173450384-2');
+    </script>
+</head>
+<body>
+    <div id="menu-bar">
+        <div id="menu" onclick="onClickMenu()">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <div class="bod">
+        <a class="link" id="b1" href="/sem1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-1
+        </a>
+        <a class="link" id="b2" href="/sem2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-2
+        </a>
+        <a class="link" id="b3" href="/sem3">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-3
+        </a>
+        <a class="link" id="b4" href="/sem4">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-4
+        </a>
+        <a class="link" id="b5" href="/sem5">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-5
+        </a>
+        <a class="link" id="b6" href="/sem6">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            SEM-6
+        </a>
+    </div>
+    <script>
+        function onClickMenu(){
+            document.getElementById("menu").classList.toggle("change");
+            document.getElementById("nav").classList.toggle("change");
+            document.getElementById("menu-bg").classList.toggle("change-bg");
+        }
+    </script>
+</body>
+</html>

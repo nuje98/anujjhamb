@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/home2.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173450384-2"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-173450384-2');
+    </script>
+</head>
+<body>
+    <section class="banner" id="sec">
+        <header>
+            <a href="/" class="logo">ANUJ</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2><div style="display:inline"></div><br>I'm <span>Anuj Jhamb</span></h2>
+            <p>I am an aspiring Software Engineer. Currently I am in my final year of Undergraduation. I am passionate about Software Development. Most of my experience has been in Full-Stack Development and Machine learning. This website is my most recent work. This is actually the place where you can know more about me, my work etc.</p>
+            <!--Counter
+            <p class="para">This website was viewed <span id="count">0</span> times</p>-->
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/anuj.jhamb/"><img src="/images/facebook.png"></a></li>
+            <li><a href="https://twitter.com/jhamb23"><img src="/images/twitter.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/anuj-jhamb/"><img src="/images/linkedin.png"></a></li>
+            <li><a href="https://github.com/nuje98"><img src="/images/github.png"></a></li>
+            <li><a href="https://www.instagram.com/anuj_jhamb/"><img src="/images/instagram.png"></a></li>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/family">Family</a></li>
+            <li><a href="/education">Education</a></li>
+            <li><a href="/grades">Grades</a></li>
+            <li><a href="/technical">Technical</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        function toggle(){
+            var sec = document.getElementById('sec');
+            var nav = document.getElementById('navigation');
+            sec.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>   
+    <!--<script>
+        const countEl = document.getElementById('count');
+        updateVisitCount();
+        function updateVisitCount() {
+            fetch('https://api.countapi.xyz/update/anujjhamb/nuje/?amount=1')
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+	        })
+        }
+    </script>-->
+</body>
+</html>
