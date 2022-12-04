@@ -61,6 +61,12 @@ router.get('/sem5', (req, res) => res.render('sem5'));
 // sem6
 router.get('/sem6', (req, res) => res.render('sem6'));
 
+// sem7
+router.get('/sem7', (req, res) => res.render('sem7'));
+
+// sem8
+router.get('/sem8', (req, res) => res.render('sem8'));
+
 // technical
 router.get('/technical', (req, res) => res.render('technical'));
 
